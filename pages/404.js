@@ -1,6 +1,7 @@
 import Headind from "../components/Heading";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 const Error = () => {
   const router = useRouter();
@@ -12,6 +13,9 @@ const Error = () => {
 
   return (
     <div>
+      <Head>
+        <title>404</title>
+      </Head>
       <Headind tag={"h2"} text={"404"} />
     </div>
   );
